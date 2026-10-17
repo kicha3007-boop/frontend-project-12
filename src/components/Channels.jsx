@@ -15,10 +15,11 @@ const ChannelItem = ({ channel, isActive }) => {
       variant={variant}
       justify="start"
       fullWidth
+      leftSection="#"
       onClick={() => setCurrentChannel(channel.id)}
       styles={{ label: { overflow: "hidden", textOverflow: "ellipsis" } }}
     >
-      {`# ${channel.name}`}
+      {channel.name}
     </Button>
   );
 

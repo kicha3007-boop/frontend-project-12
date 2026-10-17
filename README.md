@@ -1,39 +1,37 @@
-# Чат (Slack)
+# Hexlet Chat
 
 [![hexlet-check](https://github.com/kicha3007-boop/frontend-project-12/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kicha3007-boop/frontend-project-12/actions)
+[![CI](https://github.com/kicha3007-boop/frontend-project-12/actions/workflows/main.yml/badge.svg)](https://github.com/kicha3007-boop/frontend-project-12/actions/workflows/main.yml)
 
-Напишите real-time приложение на React, используя AJAX, REST, websockets, React (с хуками) + Zustand + TanStack Query + @mantine/form
+Упрощённый аналог Slack: вход и регистрация, каналы (создание, переименование, удаление),
+сообщения в реальном времени через веб-сокеты, фильтр нецензурных слов, уведомления.
 
 Учебный проект Хекслета: https://ru.hexlet.io/programs/frontend
-Как это должно работать: https://files.hexlet.app/a/ose685
-
 
 ## Стек
 
-- JavaScript
+React, Mantine (компоненты, формы, уведомления), React Router, TanStack Query (серверные данные:
+каналы и сообщения), Zustand (состояние интерфейса и авторизация), Socket.IO, i18next,
+leo-profanity, Sentry SDK (коллектор ошибок, DSN — переменная `VITE_SENTRY_DSN`).
+Бэкенд — [@hexlet/chat-server](https://www.npmjs.com/package/@hexlet/chat-server).
 
-## Установка
+Запуск разделён на два файла: `src/init.jsx` создаёт i18n, клиент запросов, хранилища и подписки
+на сокет и возвращает разметку, `src/index.jsx` открывает сокет и монтирует её.
 
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+## Требования
+
+- Node.js 22 или новее
+- npm, make
+
+## Установка и запуск
 
 ```bash
 git clone https://github.com/kicha3007-boop/frontend-project-12.git
 cd frontend-project-12
+make install
+make build
+make start      # сервер на http://localhost:5001 раздаёт собранный фронтенд
 ```
 
-## Использование
-
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
-
----
-
-<details>
-<summary>Автоматические тесты Хекслета</summary>
-
-Тесты запускаются на каждый коммит. За запуск отвечает файл `.github/workflows/hexlet-check.yml` — не удаляйте и не переименовывайте ни его, ни репозиторий.
-
-</details>
-
-## О Хекслете
-
-[Хекслет](https://ru.hexlet.io/) — школа программирования: авторские программы обучения с практикой, поддержкой наставников и реальными проектами, которые остаются в резюме. Этот репозиторий — один из таких проектов.
+Разработка: `make develop` (бэкенд и dev-сервер Vite с прокси на бэкенд), `make test`, `make lint`.
+Пользователь для входа: `admin` / `admin`.

@@ -1,0 +1,61 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "start-server -s ./dist",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest run",
+    "lint": "oxlint .",
+    "lint:fix": "oxfmt . && oxlint --fix .",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
+  },
+  "dependencies": {
+    "@hexlet/chat-server": "^3.0.0",
+    "@mantine/core": "^9.6.3",
+    "@mantine/form": "^9.6.3",
+    "@mantine/hooks": "^9.6.3",
+    "@mantine/notifications": "^9.6.3",
+    "@sentry/react": "^11.8.0",
+    "@tanstack/react-query": "^5.104.0",
+    "i18next": "^26.4.2",
+    "leo-profanity": "^1.9.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.15",
+    "react-router-dom": "^7.18.4",
+    "socket.io-client": "^4.8.4",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "i18next-cli": "^1.74.2",
+    "jsdom": "^29.1.1",
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "allowScripts": {
+    "fsevents": false,
+    "@swc/core": false
+  }
+}

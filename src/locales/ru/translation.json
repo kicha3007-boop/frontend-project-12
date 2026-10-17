@@ -1,0 +1,64 @@
+{
+  "header": {
+    "brand": "Hexlet Chat",
+    "logOut": "Выйти"
+  },
+  "login": {
+    "title": "Войти",
+    "username": "Ваш ник",
+    "password": "Пароль",
+    "submit": "Войти",
+    "noAccount": "Нет аккаунта?",
+    "signup": "Регистрация",
+    "invalidCredentials": "Неверные имя пользователя или пароль"
+  },
+  "signup": {
+    "title": "Регистрация",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "submit": "Зарегистрироваться",
+    "userExists": "Такой пользователь уже существует"
+  },
+  "validation": {
+    "required": "Обязательное поле",
+    "length": "От 3 до 20 символов",
+    "passwordMin": "Не менее 6 символов",
+    "passwordsMatch": "Пароли должны совпадать",
+    "unique": "Должно быть уникальным"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "goHome": "Но вы можете перейти на главную страницу"
+  },
+  "chat": {
+    "loading": "Загрузка...",
+    "channels": "Каналы",
+    "addChannel": "+",
+    "channelControl": "Управление каналом",
+    "rename": "Переименовать",
+    "remove": "Удалить",
+    "messages_one": "{{count}} сообщение",
+    "messages_few": "{{count}} сообщения",
+    "messages_many": "{{count}} сообщений",
+    "newMessage": "Новое сообщение",
+    "messagePlaceholder": "Введите сообщение...",
+    "send": "Отправить"
+  },
+  "modals": {
+    "addTitle": "Добавить канал",
+    "renameTitle": "Переименовать канал",
+    "removeTitle": "Удалить канал",
+    "channelName": "Имя канала",
+    "confirmRemove": "Уверены?",
+    "cancel": "Отменить",
+    "submit": "Отправить",
+    "remove": "Удалить"
+  },
+  "notifications": {
+    "channelAdded": "Канал создан",
+    "channelRenamed": "Канал переименован",
+    "channelRemoved": "Канал удалён",
+    "connectionError": "Ошибка соединения"
+  }
+}
